@@ -31,3 +31,18 @@ function isDivisible(n, x, y) {
       return false
       }
   }
+
+// Square every digit
+function squareDigits(num){
+    let numString = num.toString().split('')
+    for (let i = 0; i < numString.length; i++) {
+      numString[i] = Math.pow(numString[i], 2)
+      }
+      return parseInt(numString.join(""))
+    }
+
+// Friend or Foe?
+function friend(friends){
+    const output = friends.filter(friends => friends.length === 4)
+    return output
+  }
