@@ -46,3 +46,19 @@ function friend(friends){
     const output = friends.filter(friends => friends.length === 4)
     return output
   }
+
+// Find numbers which are divisible by given number
+function divisibleBy(numbers, divisor){
+  const result = numbers.filter(numbers => numbers % divisor === 0)
+  return result
+  }
+
+// Abbreviate a Two Word Name
+function abbrevName(name){
+  let splitName = name.split(" ")
+  let firstName = splitName[0]
+  let lastName = splitName[1]
+  let firstFirstLetter = firstName.split("")
+  let secondFirstLetter = lastName.split("")
+  return `${firstFirstLetter[0].toUpperCase()}.${secondFirstLetter[0].toUpperCase()}`
+}
