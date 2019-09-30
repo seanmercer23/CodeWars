@@ -62,3 +62,8 @@ function abbrevName(name){
   let secondFirstLetter = lastName.split("")
   return `${firstFirstLetter[0].toUpperCase()}.${secondFirstLetter[0].toUpperCase()}`
 }
+
+// String to Number
+let stringToNumber = function(str){
+  return parseInt(str);
+}
