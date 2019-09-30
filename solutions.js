@@ -67,3 +67,8 @@ function abbrevName(name){
 let stringToNumber = function(str){
   return parseInt(str);
 }
+
+//Centry from Year
+function century(year) {
+  return Math.floor(((year - 1) / 100)) + 1;
+}
