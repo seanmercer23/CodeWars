@@ -72,3 +72,8 @@ let stringToNumber = function(str){
 function century(year) {
   return Math.floor(((year - 1) / 100)) + 1;
 }
+
+//To uppercase
+function makeUpperCase(str) {
+  return str.toUpperCase()
+}
