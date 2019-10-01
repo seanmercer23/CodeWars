@@ -107,3 +107,12 @@ function even_or_odd(number) {
 function even_or_odd(number) {
   return number % 2 === 0 ? "Even" : "Odd"
 }
+
+// Needle in the haystack
+function findNeedle(haystack) {
+  for (let i = 0; i < haystack.length; i++) {
+    if (haystack[i] === "needle") {
+      return `found the needle at position ${i}`
+    }
+  }
+}
