@@ -139,3 +139,8 @@ function finalGrade (exam, projects) {
 function enough(cap, on, wait) {
   return on + wait <= cap ? 0 : (on + wait) - cap
 }
+
+// Make negative
+function makeNegative(num) {
+  return num < 0 ? num : num * -1
+}
