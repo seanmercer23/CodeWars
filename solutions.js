@@ -157,8 +157,13 @@ function elevator(left, right, call){
     return "right"
   }
 }
-
+// Describe Age
 function describeAge(age) {
   let s="You're a(n) "
   return age<13?`${s}kid`:age<18?`${s}teenager`:age<65?`${s}adult`:`${s}elderly`
+}
+
+//How Many Lightsabers do you own
+function howManyLightsabersDoYouOwn(name) {
+  return name === "Zach" ? 18 : 0
 }
