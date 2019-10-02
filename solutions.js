@@ -186,3 +186,8 @@ function removeChar(str){
  function removeChar(str){
   return str.slice(1, -1)
  };
+
+ // Remove spaces
+ function noSpace(x){
+  return x.split(" ").join("")
+}
