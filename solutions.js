@@ -180,4 +180,9 @@ function removeChar(str){
     strArr.reverse().pop()
   }
   return strArr.join("")
- }; 
+ };
+ 
+ // Remove refactor
+ function removeChar(str){
+  return str.slice(1, -1)
+ };
