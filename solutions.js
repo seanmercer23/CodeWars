@@ -203,3 +203,10 @@ function betterThanAverage(classPoints, yourPoints) {
 function reverseWords(str){
   return str.split(" ").reverse().join(" ")
 }
+
+// Beast feast
+function feast(beast, dish) {
+  const b = beast.split("")
+  const d = dish.split("")
+  return b[0] === d[0] && b[b.length - 1] === d[d.length - 1]
+}
