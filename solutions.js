@@ -198,3 +198,8 @@ function betterThanAverage(classPoints, yourPoints) {
   const average = (classPoints.reduce(reducer) + yourPoints) / (classPoints.length + 1)
   return yourPoints > average
 }
+
+// Reverse words
+function reverseWords(str){
+  return str.split(" ").reverse().join(" ")
+}
