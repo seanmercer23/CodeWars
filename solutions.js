@@ -144,3 +144,16 @@ function enough(cap, on, wait) {
 function makeNegative(num) {
   return num < 0 ? num : num * -1
 }
+
+// Closest Elevator
+function elevator(left, right, call){
+  if (Math.abs(left - call) < Math.abs(right - call)) {
+    return "left"
+  }
+  else if (Math.abs(left - call) > Math.abs(right-call)) {
+    return "right"
+  }
+  else {
+    return "right"
+  }
+}
