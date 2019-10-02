@@ -167,3 +167,8 @@ function describeAge(age) {
 function howManyLightsabersDoYouOwn(name) {
   return name === "Zach" ? 18 : 0
 }
+
+//Is it a palindrome?
+function isPalindrome(x) {
+  return x.toLowerCase() == x.split("").reverse().join("").toLowerCase()
+}
