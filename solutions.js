@@ -172,3 +172,12 @@ function howManyLightsabersDoYouOwn(name) {
 function isPalindrome(x) {
   return x.toLowerCase() == x.split("").reverse().join("").toLowerCase()
 }
+
+// Remove first and last character
+function removeChar(str){
+  let strArr = str.split("")
+  for (let i = 0; i < 2; i++) {
+    strArr.reverse().pop()
+  }
+  return strArr.join("")
+ }; 
