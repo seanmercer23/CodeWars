@@ -191,3 +191,10 @@ function removeChar(str){
  function noSpace(x){
   return x.split(" ").join("")
 }
+
+// Better than average
+function betterThanAverage(classPoints, yourPoints) {
+  const reducer = (acc, cv) => acc + cv
+  const average = (classPoints.reduce(reducer) + yourPoints) / (classPoints.length + 1)
+  return yourPoints > average
+}
