@@ -276,3 +276,9 @@ function switchItUp(number){
     return Math.min(...args)
   }
 }
+
+// Array plus Array
+function arrayPlusArray(arr1, arr2) {
+  const reducer = (acc, cv) => acc + cv
+  return (arr1.reduce(reducer)) + (arr2.reduce(reducer))
+}
