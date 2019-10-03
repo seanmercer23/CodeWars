@@ -282,3 +282,9 @@ function arrayPlusArray(arr1, arr2) {
   const reducer = (acc, cv) => acc + cv
   return (arr1.reduce(reducer)) + (arr2.reduce(reducer))
 }
+
+//Filter out the geese
+function gooseFilter (birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  return birds.filter(bird => !geese.includes(bird))
+};
