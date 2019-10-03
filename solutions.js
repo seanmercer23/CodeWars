@@ -269,3 +269,10 @@ function switchItUp(number){
     default: return number
   }
  }
+
+ // Smallest integer from array
+ class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args)
+  }
+}
