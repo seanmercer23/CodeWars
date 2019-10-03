@@ -288,3 +288,11 @@ function gooseFilter (birds) {
   var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
   return birds.filter(bird => !geese.includes(bird))
 };
+
+//Wolf in Sheep's clothing
+function warnTheSheep(queue) {
+  return queue.indexOf("wolf") === queue.length - 1 ? 
+  "Pls go away and stop eating my sheep"
+  :
+  `Oi! Sheep number ${queue.length - queue.indexOf("wolf") - 1}! You are about to be eaten by a wolf!`
+}
