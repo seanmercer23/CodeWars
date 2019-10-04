@@ -350,3 +350,8 @@ function areYouPlayingBanjo(name) {
   : 
   `${name} does not play banjo`
 }
+
+// Remove excalamation mark
+function removeExclamationMarks(s) {
+  return s.split('!').join('');
+}
