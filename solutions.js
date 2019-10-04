@@ -316,3 +316,8 @@ function checkExam(array1, array2) {
   }
   return grade >= 0 ? grade : 0
  }
+
+ // Invert values
+ function invert(array) {
+  return array.map(e => e * -1)
+}
