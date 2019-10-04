@@ -321,3 +321,9 @@ function checkExam(array1, array2) {
  function invert(array) {
   return array.map(e => e * -1)
 }
+
+// Mean of an array
+function getAverage(marks){
+  const reducer = (acc, cv) => acc + cv
+  return Math.floor(marks.reduce(reducer) / marks.length)
+}
