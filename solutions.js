@@ -363,3 +363,8 @@ function removeEveryOther(arr){
   }
   return arr
 }
+
+// Will you make it?
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  return distanceToPump <= fuelLeft * mpg ? true : false
+};
