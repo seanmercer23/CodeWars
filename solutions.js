@@ -337,9 +337,16 @@ function countBy(x, n) {
   return z;
 }
 
-//Sentence Smash
-// Smash Words
+// Sentence Smash
 function smash (words) {
   "use strict";
   return words.join(" ")
 };
+
+// Are you playing banjo?
+function areYouPlayingBanjo(name) {
+  return name[0].toLowerCase() === "r" ? 
+  `${name} plays banjo` 
+  : 
+  `${name} does not play banjo`
+}
