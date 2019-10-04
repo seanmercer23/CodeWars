@@ -336,3 +336,10 @@ function countBy(x, n) {
   }
   return z;
 }
+
+//Sentence Smash
+// Smash Words
+function smash (words) {
+  "use strict";
+  return words.join(" ")
+};
