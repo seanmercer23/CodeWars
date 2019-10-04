@@ -296,3 +296,8 @@ function warnTheSheep(queue) {
   :
   `Oi! Sheep number ${queue.length - queue.indexOf("wolf") - 1}! You are about to be eaten by a wolf!`
 }
+
+// Boolean to Yes or No
+function boolToWord( bool ){
+  return bool ? "Yes" : "No"
+}
