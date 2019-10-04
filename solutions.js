@@ -373,3 +373,8 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   return distanceToPump <= mpg * fuelLeft
 };
+
+// Check the bucket
+function checkTheBucket(bucket){
+  return bucket.includes('gold')
+}
