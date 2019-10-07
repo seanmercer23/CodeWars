@@ -378,3 +378,9 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 function checkTheBucket(bucket){
   return bucket.includes('gold')
 }
+
+// Reduce but grow
+function grow(x){
+  const reducer = (acc, cv) => acc * cv
+  return x.reduce(reducer)
+}
