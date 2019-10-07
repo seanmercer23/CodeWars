@@ -384,3 +384,8 @@ function grow(x){
   const reducer = (acc, cv) => acc * cv
   return x.reduce(reducer)
 }
+
+//Repeat string
+function repeatStr (n, s) {
+  return s.repeat(n);
+}
