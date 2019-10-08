@@ -389,3 +389,12 @@ function grow(x){
 function repeatStr (n, s) {
   return s.repeat(n);
 }
+
+// Generate Range
+function generateRange(min, max, step){
+  let rangeArray = []
+  for (let i = min; i <= max; i += step) {
+    rangeArray.push(i)
+  }
+  return rangeArray
+}
