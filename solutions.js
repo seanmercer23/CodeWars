@@ -398,3 +398,22 @@ function generateRange(min, max, step){
   }
   return rangeArray
 }
+
+// Count Sheep
+var countSheep = function (num){
+  let result = '';
+  for (let i = 1; i <= num; i++) {
+    result += i.toString() + ' sheep...';
+  }
+  return result;
+}
+
+// Summation
+var summation = function (num) {
+  let sumArray = []
+  const reducer = (acc, cv) => acc + cv
+  for (let i = 0; i <= num; i++) {
+    sumArray.push(i)
+  }
+  return sumArray.reduce(reducer)
+}
