@@ -422,3 +422,8 @@ var summation = function (num) {
 var summation = function (num) {
   return num * (num + 1) / 2
 }
+
+// Check for factor
+function checkForFactor (base, factor) {
+  return base % factor === 0
+}
