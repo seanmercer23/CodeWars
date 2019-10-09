@@ -417,3 +417,8 @@ var summation = function (num) {
   }
   return sumArray.reduce(reducer)
 }
+
+// Summation Refactor
+var summation = function (num) {
+  return num * (num + 1) / 2
+}
