@@ -427,3 +427,8 @@ var summation = function (num) {
 function checkForFactor (base, factor) {
   return base % factor === 0
 }
+
+// Personalized greeting
+function greet (name, owner) {
+  return name === owner ? 'Hello boss' : 'Hello guest'
+}
