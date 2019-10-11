@@ -441,3 +441,8 @@ function getGrade (s1, s2, s3) {
          avg >= 70 ? 'C' :
          avg >= 60 ? 'D' : 'F'
 }
+
+// Square(n) sum
+function squareSum(numbers){
+  return numbers.map(num => Math.pow(num, 2)).reduce((acc, cv) => acc + cv, 0)
+}
