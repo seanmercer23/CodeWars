@@ -446,3 +446,8 @@ function getGrade (s1, s2, s3) {
 function squareSum(numbers){
   return numbers.map(num => Math.pow(num, 2)).reduce((acc, cv) => acc + cv, 0)
 }
+
+// Keep hydrated
+function litres(time) {
+  return Math.floor(time / 2);
+}
