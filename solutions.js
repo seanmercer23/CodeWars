@@ -484,3 +484,9 @@ const calculate = str =>
   function friends(n){
     return n - 3 < 0 ? 0 : Math.floor(Math.log2(n -1))
   }
+
+  //Remove duplicate words
+  function removeDuplicateWords (s) {
+    return s.split(" ").reduce((unique, item) => unique.includes(item) ? unique : [...unique, item], []).join(" ")
+  }
+  
