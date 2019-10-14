@@ -474,3 +474,8 @@ const calculate = str =>
     const isOdd = (e) => e % 2 !== 0
     return arr.findIndex(isOdd)
   }
+
+  // Spacify
+  function spacify(str) {
+    return str.split("").join(" ")
+  }
