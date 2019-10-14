@@ -490,3 +490,9 @@ const calculate = str =>
     return s.split(" ").reduce((unique, item) => unique.includes(item) ? unique : [...unique, item], []).join(" ")
   }
   
+  // Remove duplicate word refactor
+  function removeDuplicateWords (s) {
+    const words = s.split(" ")
+    const unique = new Set(words)
+    return [...unique].join(" ")
+  }
