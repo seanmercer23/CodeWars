@@ -463,3 +463,8 @@ const calculate = str =>
       .split(' ')
       .reduce((total, num) => total + Number(num), 0)
   )
+
+  //Basic Math refactor
+  function calculate(str) {
+    return String(eval(str.split('plus').join('+').split('minus').join('-')));
+    }
