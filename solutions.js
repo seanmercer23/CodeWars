@@ -479,3 +479,8 @@ const calculate = str =>
   function spacify(str) {
     return str.split("").join(" ")
   }
+
+  // Friends
+  function friends(n){
+    return n - 3 < 0 ? 0 : Math.floor(Math.log2(n -1))
+  }
