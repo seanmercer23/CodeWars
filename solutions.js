@@ -468,3 +468,9 @@ const calculate = str =>
   function calculate(str) {
     return String(eval(str.split('plus').join('+').split('minus').join('-')));
     }
+
+  //Odd One
+  function oddOne(arr) {
+    const isOdd = (e) => e % 2 !== 0
+    return arr.findIndex(isOdd)
+  }
