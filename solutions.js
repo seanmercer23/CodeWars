@@ -496,3 +496,13 @@ const calculate = str =>
     const unique = new Set(words)
     return [...unique].join(" ")
   }
+
+  //Mash Array
+  function arrayMash (array1, array2) {
+    const mashArray = []
+    for(let i=0; i<array1.length; i++) {
+      mashArray.push(array1[i])
+      mashArray.push(array2[i])
+    }
+    return mashArray
+  }
