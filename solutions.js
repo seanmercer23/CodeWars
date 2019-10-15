@@ -512,3 +512,10 @@ const calculate = str =>
     return values === null || values.length === 0 ? 
     null : values.reduce((acc, cv) => acc * cv, [1])
   }
+
+  // Powers of 3
+  function largestPower(n){
+    let k = 0
+    while (Math.pow(3, k) < n) k++
+      return k - 1
+    }
