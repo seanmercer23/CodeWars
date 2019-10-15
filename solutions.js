@@ -506,3 +506,9 @@ const calculate = str =>
     }
     return mashArray
   }
+
+  // Product Array
+  function product(values) {
+    return values === null || values.length === 0 ? 
+    null : values.reduce((acc, cv) => acc * cv, [1])
+  }
