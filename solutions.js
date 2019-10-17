@@ -519,3 +519,24 @@ const calculate = str =>
     while (Math.pow(3, k) < n) k++
       return k - 1
     }
+
+  // Format string
+  function list(names){
+    let nameList = ''
+    if ( names.length === 0 ) {
+      return ''
+    } else {
+    for ( let i = 0; i < names.length; i++ ) {
+      if (names.length === 1) {
+        return names[i].name
+      } else if (i === names.length - 1) {
+        nameList = nameList + " & " + names[i].name
+      } else if (i < names.length && i != 0) {
+        nameList = nameList + ', ' + names[i].name
+      } else {
+        nameList += names[i].name
+      }
+      }
+      return nameList
+    }
+  }
