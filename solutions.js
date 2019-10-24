@@ -560,3 +560,6 @@ const calculate = str =>
 function menFromBoys(arr){
     return [...new Set(arr.filter(v=>v%2===0).sort((a,b)=>a-b).concat(arr.filter(v=>v%2!==0).sort((a,b)=>b-a)))]
   }
+
+// Alphaebtical addition
+let addLetters = (...letters) => String.fromCharCode((letters.reduce((sum, l) => sum + l.charCodeAt() - 96, 0) % 26 || 26) + 96)
